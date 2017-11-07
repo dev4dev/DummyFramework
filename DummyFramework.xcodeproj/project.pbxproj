@@ -10,6 +10,7 @@
 		63BBC5F21FB1CF7700835BF1 /* DummyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BBC5E81FB1CF7700835BF1 /* DummyFramework.framework */; };
 		63BBC5F71FB1CF7700835BF1 /* DummyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBC5F61FB1CF7700835BF1 /* DummyFrameworkTests.swift */; };
 		63BBC5F91FB1CF7700835BF1 /* DummyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BBC5EB1FB1CF7700835BF1 /* DummyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63BBC6031FB1D06800835BF1 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BBC6021FB1D06800835BF1 /* Dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		63BBC5F11FB1CF7700835BF1 /* DummyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DummyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BBC5F61FB1CF7700835BF1 /* DummyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFrameworkTests.swift; sourceTree = "<group>"; };
 		63BBC5F81FB1CF7700835BF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BBC6021FB1D06800835BF1 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				63BBC5EB1FB1CF7700835BF1 /* DummyFramework.h */,
 				63BBC5EC1FB1CF7700835BF1 /* Info.plist */,
+				63BBC6021FB1D06800835BF1 /* Dummy.swift */,
 			);
 			path = DummyFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					63BBC5E71FB1CF7700835BF1 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					63BBC5F01FB1CF7700835BF1 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BBC6031FB1D06800835BF1 /* Dummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		63BBC5FD1FB1CF7700835BF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.antonyuk.DummyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		63BBC5FE1FB1CF7700835BF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		63BBC6001FB1CF7700835BF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETHW6PAC6R;
 				INFOPLIST_FILE = DummyFrameworkTests/Info.plist;
@@ -390,6 +399,7 @@
 		63BBC6011FB1CF7700835BF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ETHW6PAC6R;
 				INFOPLIST_FILE = DummyFrameworkTests/Info.plist;
